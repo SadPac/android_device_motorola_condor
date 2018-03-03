@@ -618,6 +618,20 @@ static void fix_sensor_flags(int version, sensor_t& sensor) {
                     sensor.handle, sensor.flags, new_flags);
             sensor.flags = new_flags;
         }
+
+        if (sensor.type == SENSOR_TYPE_LIGHT) {
+            int new_flags = SENSOR_FLAG_ON_CHANGE_MODE;
+            ALOGV("Changing flags of handle=%d from %x to %x",
+                    sensor.handle, sensor.flags, new_flags);
+            sensor.flags = new_flags;
+        }
+
+	if (sensor.type == SENSOR_TYPE_ACCELEROMETER) {
+            int new_flags = SENSOR_FLAG_CONTINUOUS_MODE;
+            ALOGV("Changing flags of handle=%d from %x to %x",
+                    sensor.handle, sensor.flags, new_flags);
+            sensor.flags = new_flags;
+        }
     }
 }
 
