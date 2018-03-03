@@ -46,5 +46,5 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/sensors/_hals.conf:system/vendor/etc/sensors/_hals.conf
 
 # Doze
-#PRODUCT_PACKAGES += \
-#    MotoDoze
+PRODUCT_PACKAGES += \
+    MotoDoze
