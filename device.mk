@@ -45,6 +45,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/sensors/_hals.conf:system/vendor/etc/sensors/_hals.conf
 
+# Common Android Go configurations
+$(call inherit-product, build/target/product/go_defaults.mk)
+
 # Doze
 PRODUCT_PACKAGES += \
     MotoDoze
