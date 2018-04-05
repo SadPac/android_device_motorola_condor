@@ -16,7 +16,8 @@
 
 package com.cyanogenmod.settings.device;
 
-import org.lineageos.internal.util.ScreenType;
+import com.cyanogenmod.settings.device.ScreenType;
+
 
 import android.app.ActionBar;
 import android.os.Bundle;
