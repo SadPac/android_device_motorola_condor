@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aoscp_condor.mk
+    $(LOCAL_DIR)/aoscp.mk
