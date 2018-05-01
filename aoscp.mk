@@ -4,7 +4,7 @@ $(call inherit-product, device/motorola/condor/full_condor.mk)
 $(call inherit-product, vendor/aoscp/configs/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := potter
+PRODUCT_DEVICE := condor
 PRODUCT_NAME := aoscp_condor
 PRODUCT_RELEASE_NAME := MOTO E
 PRODUCT_MODEL := Moto E
