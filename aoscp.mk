@@ -2,6 +2,7 @@ $(call inherit-product, device/motorola/condor/full_condor.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/aoscp/configs/common_full_phone.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := condor
