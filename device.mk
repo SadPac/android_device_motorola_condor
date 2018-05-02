@@ -23,7 +23,6 @@ LOCAL_PATH := device/motorola/condor
 
 # device specific vendor blobs
 $(call inherit-product-if-exists, vendor/motorola/condor/condor-vendor.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Ramdisk
  PRODUCT_COPY_FILES += \
